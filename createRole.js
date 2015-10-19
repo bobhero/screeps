@@ -2,8 +2,8 @@ var manager = require('roleManager');
 module.exports =
 {
     initSpawnQue: function () {
-        if (Memory.spawnQue == undefined)
-            Memory.spawnQue = [];
+        if (Memory.createQue == undefined)
+            Memory.createQue = [];
     },
 
     addToQue: function (creep, unshift) {
@@ -18,7 +18,7 @@ module.exports =
     spawnNextInQue: function () {
         this.initSpawnQue();
 
-        if (!Memory.spawnQue.length)
+        if (!Memory.createQue.length)
             return;
 
 

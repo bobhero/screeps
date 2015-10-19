@@ -6,7 +6,6 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/action.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/carryer.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/charger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/createRole.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/extend.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/farmer.js" />
@@ -23,6 +22,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/screeps.iml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/countRole.js" afterPath="$PROJECT_DIR$/countRole.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/createRole.js" afterPath="$PROJECT_DIR$/createRole.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/factory.js" afterPath="$PROJECT_DIR$/factory.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/monitor.js" afterPath="$PROJECT_DIR$/monitor.js" />
@@ -53,8 +53,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3553616" vertical-offset="0" max-vertical-offset="802">
-              <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.26184538" vertical-offset="0" max-vertical-offset="802">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -143,8 +143,8 @@
       <file leaf-file-name="createRole.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createRole.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
-              <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1485">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -169,11 +169,11 @@
         <option value="$PROJECT_DIR$/role.prototype.js" />
         <option value="$PROJECT_DIR$/createRoles.js" />
         <option value="$PROJECT_DIR$/spawner.js" />
-        <option value="$PROJECT_DIR$/createRole.js" />
         <option value="$PROJECT_DIR$/role.farmer.js" />
         <option value="$PROJECT_DIR$/monitor.js" />
         <option value="$PROJECT_DIR$/countRole.js" />
         <option value="$PROJECT_DIR$/factory.js" />
+        <option value="$PROJECT_DIR$/createRole.js" />
         <option value="$PROJECT_DIR$/main.js" />
       </list>
     </option>
@@ -473,14 +473,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createRole.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="113" max-vertical-offset="1485">
-          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/factory.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
@@ -489,10 +481,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/createRole.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="623" max-vertical-offset="1485">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3553616" vertical-offset="0" max-vertical-offset="802">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.26184538" vertical-offset="0" max-vertical-offset="802">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
