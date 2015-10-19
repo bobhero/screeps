@@ -8,7 +8,7 @@ factory.run();
 
 module.exports.loop = function () {
     factory.init();
-    factory.run();
+   // factory.run();
     monitor();
     run(Game.creeps);
     createRole.spawnNextInQue();
