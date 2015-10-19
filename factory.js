@@ -1,8 +1,12 @@
 var countRole = require("countRole");
 module.exports = {
     init: function (homeid) {
-        if(Memory.factoryInit != undefined)
+        if(Memory.factoryInit != undefined){
+            console.log('inited ' + homeid);
             return;
+        }
+        console.log('initing')
+
         Memory.factoryInit = true;
         Memory.home = Game.getObjectById(homeid);
 
@@ -11,11 +15,9 @@ module.exports = {
 
     },
 
-
-    //设置需要的角色数量动态的
     memory:function(){
-        if(Memory.createQue == undefined)
-            Memory.createQue = [ ];
+        if(Memory.createQue == undefined || ((typeof Memory.createQue) !=="object"))
+            Memory.createQue = [];
 
         Memory.source = Memory.home.room.find(FIND_SOURCES);
         //Memory.
