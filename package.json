@@ -1,0 +1,12 @@
+{
+  "name": "screep",
+  "version": "1.0.0",
+  "description": "Screeps Autocomplete ==================== The purpose of this is to add screeps autocomplete to IDE's by creating a defintion from the documents. People can then add this project as a library in their IDE, and their IDE should be able to start autocompleting their code. Tested somewhat in JetBrain's WebStorm",
+  "main": "ConstructionSite.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "Directories.lib":"./lib"
+}

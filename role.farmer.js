@@ -1,39 +1,30 @@
-module.exports = {
-    parts: [
-        [MOVE,WORK,WORK,CARRY],
-        [MOVE,WORK,WORK,WORK,WORK,CARRY],
-    ],
+var monkey = require("monkey");
+class farmer extends monkey{
 
 
-    setSource:function(){
+    run(){
+        "use strict";
 
-    },
-    setAim:function(){
-
-    },
-    setPos:function(x,y,room){
-
-    },
-    action: function () {
-        var creep = this.creep;
-
-        if(creep.carry.energy < creep.carryCapacity) {
-            var target =creep.pos.findClosestByRange(Memory.source);
-            if(creep.harvest(target)==ERR_NOT_IN_RANGE) {
-                creep.moveTo(target);
+        this.creep.say(this.game.totalSpawnEnergy);
+      //  this.creep.moveTo(this.game.sources[0])
+        if(this.creep.carry.energy <this.creep.carryCapacity){
+        if(this.creep.harvest(this.game.sources[0])==ERR_NOT_IN_RANGE){
+            this.creep.moveTo(this.game.sources[0])
+        }
+        }else {
+            if(this.creep.transferEnergy(this.game.home)==ERR_NOT_IN_RANGE) {
+                this.creep.moveTo(this.game.home)
             }
         }
-        else {
-            var target = Memory.home;
 
-            if(creep.transferEnergy(target) == ERR_NOT_IN_RANGE) {
-                creep.moveTo(target);
-            }
-            if(creep.transferEnergy(target) == ERR_FULL) {
-                creep.dropEnergy();
-            }
-
-            //creep.transferEnergy(target);
-        }
     }
+    get body(){
+        "use strict";
+        return [WORK,CARRY,MOVE];
+    }
+
+
+
+
 }
+module.exports = farmer;

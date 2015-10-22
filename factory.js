@@ -1,32 +1,23 @@
-var countRole = require("countRole");
-module.exports = {
-    init: function (homeid) {
-        if(Memory.factoryInit != undefined){
-            console.log('inited ' + homeid);
-            return;
-        }
-        console.log('initing')
+class Factory{
+    //创建下一个元素
+  constructor(game){
+    this.game = game;
+    "use strict";
 
-        Memory.factoryInit = true;
-        Memory.home = Game.getObjectById(homeid);
-
-        //Memory
-        this.memory();
-
-    },
-
-    memory:function(){
-        if(Memory.createQue == undefined || ((typeof Memory.createQue) !=="object"))
-            Memory.createQue = [];
-
-        Memory.source = Memory.home.room.find(FIND_SOURCES);
-        //Memory.
-        Memory.requireCreeps = [
-            'farmer',
-            'farmer',
-            'uper',
-        ]
+  }
+  createNext(){
+    "use strict";
+      //this.game.home.createNext()
+  console.log("nexting")
+    if(Memory.createQue!==''){
+      var role =  require("role." + Memory.createQue);
+      var role = new role();
+      var body = role.body
+      this.game.home.createCreep(body,'',{role:Memory.createQue});
     }
-
+  }
 
 }
+
+
+module.exports = Factory;
