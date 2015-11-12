@@ -20,4 +20,5 @@ module.exports = {
         cpu.run(game);
         factory.createNext()
     }}
-//这里只加一个注释为测试git 功能
+
+//add for git flow test
